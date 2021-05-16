@@ -2,23 +2,45 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <title>Atividades</title>
+        <title></title>
         <link rel="stylesheet" href="principal.css" />
         <script src="principal.js"></script>
-        <script>
-            checaUsuario(  );
-        </script>
     </head>
     <body>
-        <h1 class="destaque">Se estudar, você pode ser como eu!</h1>
-        <section id="login">
-            <form action="valida.php" method="post">
+        <header>
+            <a href="index.html"><img src="logo.png"/></a>
+            <nav class="menu">
+                <a href="index.html">Página inicial</a>
+                <a href="sobre.html">Sobre nós</a>
+            </nav>
+            <section class="menu">
+                <a onclick="tipo( 'cad' )">Cadastrar</a>
+                <a onclick="tipo( 'log' )">Logar</a>
+            </section>
+        </header>
+        <main class="corpo">
+            <article>
                 <p>
-                    Login
-                </p><br/>
-                <input name="login" type="email" placeholder="Digite seu e-mail institucional" autofocus required>
-                <input class="button" type="submit" value="Entrar" />
-            </form>
-        </section>
+                    &emsp;&emsp;&emsp;&emsp;Nosso produto tem como clientes alvo as empresas imobiliárias que necessitam de um 
+                    sistema de gerenciamento automatizado para os seus processos internos. O Smartmob 
+                    (nome provisório) é um sistema de gerenciamento imobiliário que disponibiliza funções 
+                    para controle de receita, controle de funcionários, buscas de imóveis por filtros e 
+                    controle de clientes. Diferentemente de produtos como o Sistema para Imobiliárias 
+                    Univen, o I21 e o Micro House o nosso software proporciona o gerenciamento de 
+                    todos os processos da empresa, sem retirar a autonomia da mesma, garantindo que 
+                    o sistema seja apenas um facilitador dos processos ao invés de implantar novas 
+                    regras e regulamentos, não apenas isso, mais o produto também trata cada empresa 
+                    individualmente, sem concorrência interna para manter os preços dos imóveis competitivos.
+                </p>
+            </article>
+        </main>
+        <footer>
+            <p>
+                <h3>Contatos: </h3>
+                Telefone: (11) 99999-9999<br/>
+                E-mail:<a href="mailto:exemplo@examplo.com?subject=Assunto" >exemplo@examplo.com</a><br/><br/>
+                &copy;All rights reserved.<br/>
+            </p>
+        </footer>
     </body>
 </html>
