@@ -2,27 +2,33 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <title></title>
+        <title>SmartMOB</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="principal.css" />
         <script src="principal.js"></script>
     </head>
     <body>
         <header>
-            <a href="index.html"><img src="logo.png"/></a>
-            <nav class="menu">
-                <a href="index.html">Página inicial</a>
-                <a href="sobre.html">Sobre nós</a>
+            <nav class="menu container">
+                <a href="index.html" class="logo">
+                    <h3>Smart<span>MOB</span></h3>
+                </a>
+                <ul class="links">
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                </ul>
+                <ul class="logar">
+                    <li><a onclick="tipo( 'cad' )">Cadastrar</a></li>
+                    <li><a onclick="tipo( 'log' )">Logar</a></li>
+                </ul>
             </nav>
-            <section class="menu">
-                <a onclick="tipo( 'cad' )">Cadastrar</a>
-                <a onclick="tipo( 'log' )">Logar</a>
-            </section>
         </header>
-        <main class="corpo">
-            <article>
+        <main>
+            <section class="banner">
                 <p>
-                    &emsp;&emsp;&emsp;&emsp;Nosso produto tem como clientes alvo as empresas imobiliárias que necessitam de um 
-                    sistema de gerenciamento automatizado para os seus processos internos. O Smartmob 
+                    Nosso produto tem como clientes alvo as empresas imobiliárias que necessitam de um 
+                    sistema de gerenciamento automatizado para os seus processos internos. O SmartMOB 
                     (nome provisório) é um sistema de gerenciamento imobiliário que disponibiliza funções 
                     para controle de receita, controle de funcionários, buscas de imóveis por filtros e 
                     controle de clientes. Diferentemente de produtos como o Sistema para Imobiliárias 
@@ -32,15 +38,23 @@
                     regras e regulamentos, não apenas isso, mais o produto também trata cada empresa 
                     individualmente, sem concorrência interna para manter os preços dos imóveis competitivos.
                 </p>
-            </article>
+            </section>
+            <section class="catalogo container">
+                <h1>Catálogo</h1>
+            </section>
         </main>
         <footer>
-            <p>
-                <h3>Contatos: </h3>
-                Telefone: (11) 99999-9999<br/>
-                E-mail:<a href="mailto:exemplo@examplo.com?subject=Assunto" >exemplo@examplo.com</a><br/><br/>
-                &copy;All rights reserved.<br/>
-            </p>
+                <div class="contato">
+                    <div class="container">
+                        <p>Telefone: <span>(11) 99999-9999</span></p>
+                        <p>E-mail: <a href="mailto:exemplo@examplo.com?subject=Assunto"> exemplo@examplo.com</a></p>
+                    </div>
+                </div>
+                <div class="copy">
+                    <div class="container">
+                        &copy;All rights reserved.
+                    </div>
+                </div>
         </footer>
     </body>
 </html>
